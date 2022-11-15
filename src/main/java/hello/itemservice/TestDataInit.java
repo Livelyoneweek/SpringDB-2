@@ -16,6 +16,7 @@ public class TestDataInit {
     /**
      * 확인용 초기 데이터 추가
      */
+    //스프링 컨테이너가 완전히 초기화를 끝내고 실행되는 이벤트, 포스트컨스트럭트 는 aop같은 부분이 다 처리되지 않은시점에 실행될 수 있음
     @EventListener(ApplicationReadyEvent.class)
     public void initData() {
         log.info("test data init");
