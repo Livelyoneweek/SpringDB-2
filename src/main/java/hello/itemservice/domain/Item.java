@@ -1,11 +1,13 @@
 package hello.itemservice.domain;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
 @Entity
+@NoArgsConstructor //jpa는 기본생성자 필수
 public class Item {
 
     @Id
@@ -16,9 +18,7 @@ public class Item {
     private String itemName;
     private Integer price;
     private Integer quantity;
-
-    public Item() {
-    }
+    
 
     public Item(String itemName, Integer price, Integer quantity) {
         this.itemName = itemName;
