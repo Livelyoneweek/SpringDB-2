@@ -20,7 +20,8 @@ import javax.sql.DataSource;
 //@Import(JdbcTemplateV3Config.class)
 //@Import(JpaConfig.class)
 //@Import(SpringDataJpaConfig.class)
-@Import(QuerydslConfig.class)
+//@Import(QuerydslConfig.class)
+@Import(V2Config.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web") //저 패키지 안에만 컴포넌트 스캔하겠다, 나머진 수동으로 할꺼
 public class ItemServiceApplication {
 
